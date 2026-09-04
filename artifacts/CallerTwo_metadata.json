@@ -1,0 +1,98 @@
+{
+	"compiler": {
+		"version": "0.8.36+commit.8a079791"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "InternalAccess",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "PublicAccess",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getResults",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "roadLights",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Introduction.sol": "CallerTwo"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Introduction.sol": {
+			"keccak256": "0x879ba81e2971888f044bfacee139bf371a5e205524a45b4c3bd24ea2b2da03cf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://753e3b1388b477119f40a28b76aa70c6926cea635e88fcfe3c365774747a3224",
+				"dweb:/ipfs/QmT2sAwph8Nj86ZvPYY5j2XpTxJisiF3Kf9JbWRkvFGrVV"
+			]
+		}
+	},
+	"version": 1
+}
