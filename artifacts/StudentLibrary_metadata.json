@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.36+commit.8a079791"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/zUniversity System.sol": "StudentLibrary"
+		},
+		"evmVersion": "osaka",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/zUniversity System.sol": {
+			"keccak256": "0xb801fbdfb83c6fdbb5dc91f2b87be2e2ed33630eea01fb359f65153c70549234",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://771ef077c9b4322ebaa5ceb22e7527c69d2266b76132742c337174cd153a1765",
+				"dweb:/ipfs/QmV69WgsuvQWFdhEGhqG1X7uJvj1acE4zAivnfs6SQG3t5"
+			]
+		}
+	},
+	"version": 1
+}

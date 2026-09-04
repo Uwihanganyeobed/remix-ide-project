@@ -1,0 +1,84 @@
+{
+	"id": "1cfbf5c3d86e245b759929731cd681c0",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.36",
+	"solcLongVersion": "0.8.36+commit.8a079791",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/projects/Connect Solidity to a Frontend.sol": {
+				"content": "// <!DOCTYPE html>\r\n// <html>\r\n// <head>\r\n//     <title>My DApp</title>\r\n// </head>\r\n\r\n// <body>\r\n\r\n//     <h1>My Counter DApp</h1>\r\n\r\n//     <button onclick=\"connectWallet()\">\r\n//         Connect Wallet\r\n//     </button>\r\n\r\n//     <button onclick=\"increaseCounter()\">\r\n//         Increase\r\n//     </button>\r\n\r\n//     <h2>\r\n//         Count:\r\n//         <span id=\"count\">0</span>\r\n//     </h2>\r\n\r\n//     <script src=\"https://cdn.jsdelivr.net/npm/ethers@6.13.5/dist/ethers.umd.min.js\"></script>\r\n\r\n//     <script>\r\n\r\n//         // Replace with your deployed contract address\r\n//         const contractAddress = \"YOUR_CONTRACT_ADDRESS\";\r\n\r\n//         // ABI tells JavaScript how to communicate with Solidity\r\n//         const contractABI = [\r\n//             \"function count() view returns (uint256)\",\r\n//             \"function increase()\"\r\n//         ];\r\n\r\n//         let provider;\r\n//         let signer;\r\n//         let contract;\r\n\r\n//         async function connectWallet() {\r\n\r\n//             // Connect MetaMask\r\n//             provider = new ethers.BrowserProvider(window.ethereum);\r\n\r\n//             await provider.send(\"eth_requestAccounts\", []);\r\n\r\n//             signer = await provider.getSigner();\r\n\r\n//             contract = new ethers.Contract(\r\n//                 contractAddress,\r\n//                 contractABI,\r\n//                 signer\r\n//             );\r\n\r\n//             console.log(\"Wallet connected\");\r\n\r\n//             getCount();\r\n//         }\r\n\r\n//         async function getCount() {\r\n\r\n//             const value = await contract.count();\r\n\r\n//             document.getElementById(\"count\").innerText =\r\n//                 value.toString();\r\n//         }\r\n\r\n//         async function increaseCounter() {\r\n\r\n//             const transaction = await contract.increase();\r\n\r\n//             // Wait for blockchain confirmation\r\n//             await transaction.wait();\r\n\r\n//             getCount();\r\n//         }\r\n\r\n//     </script>\r\n\r\n// </body>\r\n// </html>"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/projects/Connect Solidity to a Frontend.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/projects/Connect Solidity to a Frontend.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			},
+			{
+				"component": "general",
+				"errorCode": "3420",
+				"formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.36;\"\n--> contracts/projects/Connect Solidity to a Frontend.sol\n\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.36;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/projects/Connect Solidity to a Frontend.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/projects/Connect Solidity to a Frontend.sol": {
+				"ast": {
+					"absolutePath": "contracts/projects/Connect Solidity to a Frontend.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "1981:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
